@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mattress Cleaning Services | Variety Steam Cleaning Johannesburg</title>
+    <meta name="description" content="Professional mattress steam cleaning in Johannesburg. Deep cleaning removes dirt, stains, dust mites and allergens. Eco-friendly solutions with 100% satisfaction guarantee.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #5dade2;
+            --secondary: #eaf2f8;
+            --accent: #2980b9;
+            --dark: #34495e;
+            --light: #ffffff;
+            --gray: #f5f5f5;
+        }
+       
+        /* General styles */
+        body {
+            padding-top: 90px;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* Fixed Header Styles */
+        header {
+            background-color: rgba(255, 255, 255, 0.98);
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .container.header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+        }
+        
+        .logo-img {
+            height: 60px;
+            width: auto;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .logo-text span {
+            color: var(--accent);
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--dark);
+        }
+        
+        /* Navigation Button Styles */
+        nav ul {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            position: relative;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--dark);
+            padding: 8px 0;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+        
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+
+        /* Updated Hero Section */
+        .service-hero {
+            background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), 
+                        url('https://images.unsplash.com/photo-1616627561839-074385245ff6') center/cover;
+            padding: 150px 0 100px;
+            text-align: center;
+            color: #333;
+            position: relative;
+        }
+        
+        .service-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .service-hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #555;
+        }
+        
+        .hero-btns {
+            margin-top: 40px;
+        }
+        
+        .hero-btns .btn {
+            margin: 0 15px;
+            padding: 15px 30px;
+            display: inline-block;
+            border-radius: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .btn-primary {
+            background: var(--accent);
+            color: var(--light);
+            box-shadow: 0 5px 15px rgba(41, 128, 185, 0.3);
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(41, 128, 185, 0.4);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--accent);
+            color: var(--accent);
+        }
+        
+        .btn-outline:hover {
+            background: var(--accent);
+            color: var(--light);
+        }
+
+        /* Service Details Section */
+        .service-details {
+            padding: 80px 0;
+            background: var(--light);
+            position: relative;
+        }
+       
+        .service-details::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 300px;
+            background: url('https://images.unsplash.com/photo-1616627561839-074385245ff6') center/cover;
+            opacity: 0.05;
+            z-index: 0;
+        }
+       
+        .service-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+       
+        .service-content h2 {
+            color: var(--accent);
+            margin-bottom: 25px;
+            font-size: 2.5rem;
+            text-align: center;
+            position: relative;
+        }
+       
+        .service-content h2:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--primary);
+            margin: 15px auto 30px;
+        }
+       
+        .service-content h3 {
+            color: var(--accent);
+            margin: 40px 0 20px;
+            font-size: 1.8rem;
+            position: relative;
+            padding-left: 20px;
+        }
+       
+        .service-content h3:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            height: 80%;
+            width: 5px;
+            background: var(--primary);
+        }
+       
+        .service-content p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .service-content ul {
+            margin-bottom: 30px;
+            padding-left: 20px;
+        }
+
+        .service-content li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .service-content li:before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+        }
+       
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 40px 0;
+        }
+       
+        .benefit-card {
+            background: var(--light);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border: 1px solid rgba(0,0,0,0.05);
+            position: relative;
+            overflow: hidden;
+        }
+       
+        .benefit-card:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--primary);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+       
+        .benefit-card:hover:after {
+            transform: scaleX(1);
+        }
+       
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+       
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+       
+        .benefit-card:hover .benefit-icon {
+            transform: rotate(15deg) scale(1.1);
+        }
+       
+        /* Service Image */
+        .service-image {
+            margin: 50px 0;
+            text-align: center;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.5s ease;
+        }
+       
+        .service-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+       
+        .service-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+       
+        /* Trusted Companies Section */
+        .trusted-companies {
+            background: var(--secondary);
+            padding: 60px 0;
+            margin: 60px 0;
+            text-align: center;
+            border-radius: 10px;
+        }
+       
+        .trusted-companies h3 {
+            color: var(--accent);
+            margin-bottom: 40px;
+            font-size: 1.8rem;
+            position: relative;
+            display: inline-block;
+        }
+       
+        .trusted-companies h3:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: var(--primary);
+        }
+       
+        .companies-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+       
+        .company-logo {
+            height: 60px;
+            width: auto;
+            opacity: 0.7;
+            transition: all 0.3s;
+            filter: grayscale(100%);
+        }
+       
+        .company-logo:hover {
+            opacity: 1;
+            filter: grayscale(0);
+            transform: scale(1.1);
+        }
+       
+        /* Pricing Table */
+        .pricing-table {
+            margin: 60px 0;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            min-width: 600px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        thead tr {
+            background-color: var(--accent);
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 15px 20px;
+            text-align: left;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid var(--accent);
+        }
+
+        tbody tr:hover {
+            background-color: var(--secondary);
+        }
+
+        .price {
+            font-weight: bold;
+            color: var(--accent);
+        }
+       
+        /* CTA Section */
+        .service-cta {
+            text-align: center;
+            margin: 60px 0 40px;
+        }
+       
+        .service-cta .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--light);
+            padding: 18px 45px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(41, 128, 185, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+       
+        .service-cta .btn:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 5px;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.5);
+            opacity: 0;
+            border-radius: 100%;
+            transform: scale(1, 1) translate(-50%);
+            transform-origin: 50% 50%;
+        }
+       
+        .service-cta .btn:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(41, 128, 185, 0.4);
+        }
+       
+        .service-cta .btn:hover:after {
+            animation: ripple 1s ease-out;
+        }
+       
+        @keyframes ripple {
+            0% {
+                transform: scale(0, 0);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(20, 20);
+                opacity: 0;
+            }
+        }
+
+        /* Testimonials */
+        .testimonials {
+            margin: 60px 0;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            position: relative;
+        }
+
+        .testimonial-card:before {
+            content: '\201C';
+            font-family: Georgia, serif;
+            font-size: 60px;
+            color: var(--secondary);
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            line-height: 1;
+        }
+
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+
+        .author-info h4 {
+            margin: 0;
+            color: var(--dark);
+        }
+
+        .author-info p {
+            margin: 5px 0 0;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        .rating {
+            color: #FFD700;
+            margin-top: 5px;
+        }
+       
+        /* FAQ Section */
+        .faq-section {
+            margin: 60px 0;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            background: var(--secondary);
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 20px;
+            max-height: 500px;
+        }
+
+        .faq-toggle {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+       
+        /* Mattress Types */
+        .mattress-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .mattress-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .mattress-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .mattress-img {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .mattress-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .mattress-card:hover .mattress-img img {
+            transform: scale(1.1);
+        }
+
+        .mattress-info {
+            padding: 20px;
+        }
+
+        .mattress-info h4 {
+            margin: 0 0 10px;
+            color: var(--accent);
+        }
+       
+        /* Responsive */
+        @media (max-width: 900px) {
+            .benefits-grid, .mattress-types {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+       
+        @media (max-width: 768px) {
+            body {
+                padding-top: 70px;
+            }
+            
+            .logo-img {
+                height: 50px;
+            }
+            
+            .logo-text {
+                font-size: 20px;
+            }
+            
+            .service-hero {
+                padding: 120px 0 80px;
+            }
+           
+            .service-hero h1 {
+                font-size: 2.5rem;
+            }
+           
+            .companies-grid {
+                gap: 30px;
+            }
+           
+            .company-logo {
+                height: 40px;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: #fff;
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            }
+
+            nav.active {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+       
+        @media (max-width: 480px) {
+            .service-hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-btns .btn {
+                display: block;
+                margin: 15px auto;
+                max-width: 250px;
+            }
+           
+            .companies-grid {
+                gap: 20px;
+            }
+           
+            .company-logo {
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Fixed Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-container">
+                <!-- Replace with your actual logo -->
+                
+                <div class="logo-text">VARIETY <span>STEAM CLEANING</span></div>
+            </a>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Updated Service Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <h1>Professional Mattress Cleaning</h1>
+            <p>Deep clean and sanitize your mattress to remove dust mites, allergens, and stains for a healthier sleep environment</p>
+            <div class="hero-btns">
+                <a href="index.html#contact" class="btn btn-primary">GET A FREE QUOTE</a>
+                <a href="tel:+27123456789" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details Section -->
+    <section class="service-details">
+        <div class="service-container">
+            <div class="service-content">
+                <h2>Expert Mattress Cleaning Services</h2>
+               
+                <p>At Variety Steam Cleaning, we specialize in deep cleaning mattresses throughout Johannesburg. Our certified technicians use advanced steam cleaning technology to eliminate dust mites, bacteria, and allergens that accumulate in your mattress over time.</p>
+                
+                <div class="service-image">
+                    <video width="640" height="360" controls>
+                        <source src="Data\Mattress\MattressVid.mp4" type="video/mp4">
+                         Your browser does not support the video tag.
+                    </video>
+                </div>
+               
+                <h3>Our Mattress Cleaning Process</h3>
+               
+                <p>We follow a comprehensive 5-step process designed to thoroughly clean and sanitize your mattress:</p>
+                
+                <ul>
+                    <li><strong>Inspection:</strong> We assess your mattress condition and identify problem areas</li>
+                    <li><strong>Vacuuming:</strong> Powerful suction removes surface dust, hair, and dry particles</li>
+                    <li><strong>Pre-treatment:</strong> Eco-friendly solutions break down stains and organic matter</li>
+                    <li><strong>Steam Cleaning:</strong> High-temperature steam penetrates deep to kill bacteria and dust mites</li>
+                    <li><strong>Drying:</strong> Rapid drying process leaves your mattress fresh and ready for use</li>
+                </ul>
+
+                <h3>Mattress Types We Clean</h3>
+                
+                <div class="mattress-types">
+                    <div class="mattress-card">
+                        <div class="mattress-img">
+                            <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86" alt="Memory Foam Mattress">
+                        </div>
+                        <div class="mattress-info">
+                            <h4>Memory Foam</h4>
+                            <p>Gentle cleaning that preserves the foam structure while removing allergens</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mattress-card">
+                        <div class="mattress-img">
+                            <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267" alt="Spring Mattress">
+                        </div>
+                        <div class="mattress-info">
+                            <h4>Spring Mattresses</h4>
+                            <p>Deep cleaning between coils to remove accumulated dust and allergens</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mattress-card">
+                        <div class="mattress-img">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7" alt="Latex Mattress">
+                        </div>
+                        <div class="mattress-info">
+                            <h4>Latex Mattresses</h4>
+                            <p>Special care for natural latex to maintain its properties</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mattress-card">
+                        <div class="mattress-img">
+                            <img src="https://images.unsplash.com/photo-1519947486511-46149fa0a254" alt="Pillow Top Mattress">
+                        </div>
+                        <div class="mattress-info">
+                            <h4>Pillow Top Mattresses</h4>
+                            <p>Careful cleaning of delicate pillow top surfaces</p>
+                        </div>
+                    </div>
+                </div>
+               
+                <h3>Why Choose Our Mattress Cleaning?</h3>
+               
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bacteria"></i>
+                        </div>
+                        <h4>Allergen Removal</h4>
+                        <p>Our steam cleaning eliminates 99.9% of dust mites, bacteria, and allergens that accumulate in mattresses.</p>
+                    </div>
+                   
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <h4>Stain Removal</h4>
+                        <p>We effectively remove sweat stains, urine, blood, and other organic stains from mattresses.</p>
+                    </div>
+                   
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Quick Drying</h4>
+                        <p>Our advanced extraction methods mean your mattress dries quickly, typically within 4-6 hours.</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonials -->
+                <div class="testimonials">
+                    <h3>What Our Clients Say</h3>
+                    <div class="testimonial-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"After the cleaning, my allergies improved significantly. I had no idea how much dust and allergens were in my mattress!"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah K." class="author-img">
+                                <div class="author-info">
+                                    <h4>Sarah K.</h4>
+                                    <p>Sandton</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"They removed years of sweat stains from my mattress that I thought were permanent. It looks and smells like new!"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="James T." class="author-img">
+                                <div class="author-info">
+                                    <h4>James T.</h4>
+                                    <p>Randburg</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"The team was professional and efficient. My kids' mattresses were completely sanitized after bedwetting accidents."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Nandi M." class="author-img">
+                                <div class="author-info">
+                                    <h4>Nandi M.</h4>
+                                    <p>Fourways</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h3>Frequently Asked Questions</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How often should I clean my mattress?</span>
+                            <i class="fas fa-chevron-down faq-toggle"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We recommend professional cleaning every 6-12 months for optimal hygiene. Homes with allergy sufferers, pets, or young children may benefit from more frequent cleaning (every 6 months).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Will cleaning remove all stains from my mattress?</span>
+                            <i class="fas fa-chevron-down faq-toggle"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>While we can significantly improve or remove most stains, success depends on the stain type and age. Organic stains (sweat, urine) typically respond best to treatment. We offer free stain assessment before cleaning.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Is the cleaning process safe for all mattress types?</span>
+                            <i class="fas fa-chevron-down faq-toggle"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, our methods are safe for all mattress types including memory foam, latex, and traditional spring mattresses. We adjust moisture levels and cleaning techniques based on your specific mattress.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How long does it take for a mattress to dry?</span>
+                            <i class="fas fa-chevron-down faq-toggle"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Drying times vary by mattress type but typically range from 4-8 hours. We recommend using fans or opening windows to accelerate drying. Your mattress will be ready for use the same day.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trusted Companies Section -->
+                <div class="trusted-companies">
+                    <h3>Trusted By Leading Companies</h3>
+                    <div class="companies-grid">
+                        <img src="Data\Logos\cropped-header_logo.png" alt="Company 1" class="company-logo">
+                        <img src="Data\Logos\Pokecut_1744467295907.png" alt="Company 2" class="company-logo">
+                        <img src="Data\Logos\Pokecut_1744467354861.png" alt="Company 3" class="company-logo">
+                        <img src="Data\Logos\Pokecut_1744467384548.png" alt="Company 4" class="company-logo">
+                        <img src="Data\Logos\Pokecut_1744467413726.png" alt="Company 5" class="company-logo">
+                    </div>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="service-cta">
+                    <a href="index.html#contact" class="btn">GET A FREE QUOTE TODAY</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+            this.innerHTML = nav.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.style.padding = '10px 0';
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.padding = '15px 0';
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
+            }
+        });
+
+        // FAQ toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const item = question.parentNode;
+                    item.classList.toggle('active');
+                    
+                    // Close other open FAQs
+                    faqQuestions.forEach(q => {
+                        if (q !== question && q.parentNode.classList.contains('active')) {
+                            q.parentNode.classList.remove('active');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

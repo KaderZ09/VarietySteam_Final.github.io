@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upholstery Cleaning Services | Variety Steam Cleaning Johannesburg</title>
+    <meta name="description" content="Professional upholstery steam cleaning in Johannesburg. Deep cleaning removes dirt, stains, and allergens from sofas, chairs, and more. Eco-friendly solutions with 100% satisfaction guarantee.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #5dade2;
+            --secondary: #eaf2f8;
+            --accent: #2980b9;
+            --dark: #34495e;
+            --light: #ffffff;
+            --gray: #f5f5f5;
+        }
+       
+        /* General styles */
+        body {
+            padding-top: 90px;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* Fixed Header Styles */
+        header {
+            background-color: rgba(255, 255, 255, 0.98);
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .container.header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+        }
+        
+        .logo-img {
+            height: 60px;
+            width: auto;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .logo-text span {
+            color: var(--accent);
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--dark);
+        }
+        
+        /* Navigation Button Styles */
+        nav ul {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            position: relative;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--dark);
+            padding: 8px 0;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+        
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+
+        /* Updated Hero Section */
+        .service-hero {
+            background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), 
+                        url('https://images.unsplash.com/photo-1556228453-efd6c1ff04f6') center/cover;
+            padding: 150px 0 100px;
+            text-align: center;
+            color: #333;
+            position: relative;
+        }
+        
+        .service-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .service-hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #555;
+        }
+        
+        .hero-btns {
+            margin-top: 40px;
+        }
+        
+        .hero-btns .btn {
+            margin: 0 15px;
+            padding: 15px 30px;
+            display: inline-block;
+            border-radius: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .btn-primary {
+            background: var(--accent);
+            color: var(--light);
+            box-shadow: 0 5px 15px rgba(41, 128, 185, 0.3);
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(41, 128, 185, 0.4);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--accent);
+            color: var(--accent);
+        }
+        
+        .btn-outline:hover {
+            background: var(--accent);
+            color: var(--light);
+        }
+
+        /* Service Details Section */
+        .service-details {
+            padding: 80px 0;
+            background: var(--light);
+            position: relative;
+        }
+       
+        .service-details::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 300px;
+            background: url('https://images.unsplash.com/photo-1556228453-efd6c1ff04f6') center/cover;
+            opacity: 0.05;
+            z-index: 0;
+        }
+       
+        .service-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+       
+        .service-content h2 {
+            color: var(--accent);
+            margin-bottom: 25px;
+            font-size: 2.5rem;
+            text-align: center;
+            position: relative;
+        }
+       
+        .service-content h2:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--primary);
+            margin: 15px auto 30px;
+        }
+       
+        .service-content h3 {
+            color: var(--accent);
+            margin: 40px 0 20px;
+            font-size: 1.8rem;
+            position: relative;
+            padding-left: 20px;
+        }
+       
+        .service-content h3:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            height: 80%;
+            width: 5px;
+            background: var(--primary);
+        }
+       
+        .service-content p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .service-content ul {
+            margin-bottom: 30px;
+            padding-left: 20px;
+        }
+
+        .service-content li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .service-content li:before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+        }
+       
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 40px 0;
+        }
+       
+        .benefit-card {
+            background: var(--light);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border: 1px solid rgba(0,0,0,0.05);
+            position: relative;
+            overflow: hidden;
+        }
+       
+        .benefit-card:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--primary);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+       
+        .benefit-card:hover:after {
+            transform: scaleX(1);
+        }
+       
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+       
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+       
+        .benefit-card:hover .benefit-icon {
+            transform: rotate(15deg) scale(1.1);
+        }
+       
+        /* Service Image */
+        .service-image {
+            margin: 50px 0;
+            text-align: center;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.5s ease;
+        }
+       
+        .service-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+       
+        .service-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+       
+        /* Trusted Companies Section */
+        .trusted-companies {
+            background: var(--secondary);
+            padding: 60px 0;
+            margin: 60px 0;
+            text-align: center;
+            border-radius: 10px;
+        }
+       
+        .trusted-companies h3 {
+            color: var(--accent);
+            margin-bottom: 40px;
+            font-size: 1.8rem;
+            position: relative;
+            display: inline-block;
+        }
+       
+        .trusted-companies h3:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: var(--primary);
+        }
+       
+        .companies-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+       
+        .company-logo {
+            height: 60px;
+            width: auto;
+            opacity: 0.7;
+            transition: all 0.3s;
+            filter: grayscale(100%);
+        }
+       
+        .company-logo:hover {
+            opacity: 1;
+            filter: grayscale(0);
+            transform: scale(1.1);
+        }
+       
+        /* Pricing Table */
+        .pricing-table {
+            margin: 60px 0;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            min-width: 600px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        thead tr {
+            background-color: var(--accent);
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 15px 20px;
+            text-align: left;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid var(--accent);
+        }
+
+        tbody tr:hover {
+            background-color: var(--secondary);
+        }
+
+        .price {
+            font-weight: bold;
+            color: var(--accent);
+        }
+       
+        /* CTA Section */
+        .service-cta {
+            text-align: center;
+            margin: 60px 0 40px;
+        }
+       
+        .service-cta .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--light);
+            padding: 18px 45px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(41, 128, 185, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+       
+        .service-cta .btn:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 5px;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.5);
+            opacity: 0;
+            border-radius: 100%;
+            transform: scale(1, 1) translate(-50%);
+            transform-origin: 50% 50%;
+        }
+       
+        .service-cta .btn:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(41, 128, 185, 0.4);
+        }
+       
+        .service-cta .btn:hover:after {
+            animation: ripple 1s ease-out;
+        }
+       
+        @keyframes ripple {
+            0% {
+                transform: scale(0, 0);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(20, 20);
+                opacity: 0;
+            }
+        }
+
+        /* Testimonials */
+        .testimonials {
+            margin: 60px 0;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            position: relative;
+        }
+
+        .testimonial-card:before {
+            content: '\201C';
+            font-family: Georgia, serif;
+            font-size: 60px;
+            color: var(--secondary);
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            line-height: 1;
+        }
+
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+
+        .author-info h4 {
+            margin: 0;
+            color: var(--dark);
+        }
+
+        .author-info p {
+            margin: 5px 0 0;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        .rating {
+            color: #FFD700;
+            margin-top: 5px;
+        }
+       
+        /* FAQ Section */
+        .faq-section {
+            margin: 60px 0;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            background: var(--secondary);
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 20px;
+            max-height: 500px;
+        }
+
+        .faq-toggle {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+       
+        /* Upholstery Types */
+        .upholstery-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .upholstery-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .upholstery-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .upholstery-img {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .upholstery-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .upholstery-card:hover .upholstery-img img {
+            transform: scale(1.1);
+        }
+
+        .upholstery-info {
+            padding: 20px;
+        }
+
+        .upholstery-info h4 {
+            margin: 0 0 10px;
+            color: var(--accent);
+        }
+       
+        /* Responsive */
+        @media (max-width: 900px) {
+            .benefits-grid, .upholstery-types {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+       
+        @media (max-width: 768px) {
+            body {
+                padding-top: 70px;
+            }
+            
+            .logo-img {
+                height: 50px;
+            }
+            
+            .logo-text {
+                font-size: 20px;
+            }
+            
+            .service-hero {
+                padding: 120px 0 80px;
+            }
+           
+            .service-hero h1 {
+                font-size: 2.5rem;
+            }
+           
+            .companies-grid {
+                gap: 30px;
+            }
+           
+            .company-logo {
+                height: 40px;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: #fff;
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            }
+
+            nav.active {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+       
+        @media (max-width: 480px) {
+            .service-hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-btns .btn {
+                display: block;
+                margin: 15px auto;
+                max-width: 250px;
+            }
+           
+            .companies-grid {
+                gap: 20px;
+            }
+           
+            .company-logo {
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Fixed Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-container">
+                <!-- Replace with your actual logo -->
+                
+                <div class="logo-text">VARIETY <span>STEAM CLEANING</span></div>
+            </a>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Updated Service Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <h1>Professional Upholstery Cleaning</h1>
+            <p>Restore your furniture to its original beauty with our specialized upholstery cleaning services</p>
+            <div class="hero-btns">
+                <a href="index.html#contact" class="btn btn-primary">GET A FREE QUOTE</a>
+                <a href="tel:+27123456789" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details Section -->
+    <section class="service-details">
+        <div class="service-container">
+            <div class="service-content">
+                <h2>Expert Upholstery Cleaning Services</h2>
+               
+                <p>At Variety Steam Cleaning, we specialize in rejuvenating all types of upholstery throughout Johannesburg. Our certified technicians use advanced cleaning techniques tailored to your specific furniture fabric, ensuring deep cleaning without damage.</p>
+                
+                <div class="service-image">
+                    <video width="640" height="360" controls>
+                        <source src="Data\Upholstery\Apholstery2.mp4" type="video/mp4">
+                         Your browser does not support the video tag.
+                    </video>
+                </div>
+               
+                <h3>Our Upholstery Cleaning Process</h3>
+               
+                <p>We follow a careful 5-step process designed to protect your furniture while delivering exceptional results:</p>
+                
+                <ul>
+                    <li><strong>Fabric Identification:</strong> We determine the fabric type and appropriate cleaning method</li>
+                    <li><strong>Pre-treatment:</strong> Specialized solutions loosen embedded dirt and stains</li>
+                    <li><strong>Deep Cleaning:</strong> Gentle yet effective cleaning tailored to your upholstery</li>
+                    <li><strong>Spot Treatment:</strong> Targeted removal of stubborn stains</li>
+                    <li><strong>Protection:</strong> Optional fabric protector application to repel future stains</li>
+                </ul>
+
+                <h3>Upholstery We Clean</h3>
+                
+                <div class="upholstery-types">
+                    <div class="upholstery-card">
+                        <div class="upholstery-img">
+                            <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267" alt="Sofas and Couches">
+                        </div>
+                        <div class="upholstery-info">
+                            <h4>Sofas & Couches</h4>
+                            <p>Revitalize your living room centerpiece with our gentle yet effective cleaning</p>
+                        </div>
+                    </div>
+                    
+                    <div class="upholstery-card">
+                        <div class="upholstery-img">
+                            <img src="https://images.unsplash.com/photo-1519947486511-46149fa0a254" alt="Armchairs">
+                        </div>
+                        <div class="upholstery-info">
+                            <h4>Armchairs</h4>
+                            <p>Restore comfort and beauty to your favorite seating</p>
+                        </div>
+                    </div>
+                    
+                    <div class="upholstery-card">
+                        <div class="upholstery-img">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7" alt="Dining Chairs">
+                        </div>
+                        <div class="upholstery-info">
+                            <h4>Dining Chairs</h4>
+                            <p>Remove food stains and spills from your dining set</p>
+                        </div>
+                    </div>
+                    
+                    <div class="upholstery-card">
+                        <div class="upholstery-img">
+                            <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86" alt="Ottomans">
+                        </div>
+                        <div class="upholstery-info">
+                            <h4>Ottomans & Footstools</h4>
+                            <p>Refresh frequently used furniture pieces</p>
+                        </div>
+                    </div>
+                </div>
+               
+                <h3>Why Choose Our Upholstery Cleaning?</h3>
+               
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-fabric"></i>
+                        </div>
+                        <h4>Fabric-Specific Cleaning</h4>
+                        <p>We customize our approach based on your upholstery fabric type - from delicate silks to durable microfibers.</p>
+                    </div>
+                   
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <h4>Family & Pet Safe</h4>
+                        <p>Our non-toxic, eco-friendly solutions are safe for children and pets once dry (typically 2-4 hours).</p>
+                    </div>
+                   
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Quick Drying</h4>
+                        <p>Advanced techniques mean most upholstery dries within 4-6 hours, ready for use the same day.</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonials -->
+                <div class="testimonials">
+                    <h3>What Our Clients Say</h3>
+                    <div class="testimonial-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"My white sofa looked brand new after Variety Steam Cleaning worked on it, great job Carol and team!"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/0.jpg" alt="Asqeeza Ganey." class="author-img">
+                                <div class="author-info">
+                                    <h4>Asqeeza Ganey.</h4>
+                                    <p>Fourways</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"Afternoon,
+                                    Thank you for the great service again"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Ebrahim." class="author-img">
+                                <div class="author-info">
+                                    <h4>Ebrahim.</h4>
+                                    <p>Parkhurst</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"Quick, professional service, team was professional and very friendly."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/40.jpg" alt="Mercy." class="author-img">
+                                <div class="author-info">
+                                    <h4>Mercy.</h4>
+                                    <p>Sandton</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h3>Frequently Asked Questions</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How often should I clean my upholstery?</span>
+                            <i class="fas fa-chevron-down faq-toggle"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We recommend professional cleaning every 12-24 months for most households. Homes with pets, children, or light-colored fabrics may need cleaning every 6-12 months.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Will cleaning remove all stains from my furniture?</span>
+                            <i class="fas fa-chevron-down faq-toggle"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>While we can significantly improve or remove most stains, success depends on the stain type, age, and fabric. We offer free stain assessment before treatment.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Is the cleaning process safe for all fabrics?</span>
+                            <i class="fas fa-chevron-down faq-toggle"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We assess each piece individually and use appropriate methods for the specific fabric. Our technicians are trained to handle delicate fabrics like silk and velvet with special care.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How long does it take for upholstery to dry?</span>
+                            <i class="fas fa-chevron-down faq-toggle"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Drying times vary by fabric but typically range from 4-8 hours. We recommend opening windows or using fans to accelerate drying.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trusted Companies Section -->
+                <div class="trusted-companies">
+                    <h3>Trusted By Leading Companies</h3>
+                    <div class="companies-grid">
+                        <img src="Data\Logos\cropped-header_logo.png" alt="Company 1" class="company-logo">
+                        <img src="Data\Logos\Pokecut_1744467295907.png" alt="Company 2" class="company-logo">
+                        <img src="Data\Logos\Pokecut_1744467354861.png" alt="Company 3" class="company-logo">
+                        <img src="Data\Logos\Pokecut_1744467384548.png" alt="Company 4" class="company-logo">
+                        <img src="Data\Logos\Pokecut_1744467413726.png" alt="Company 5" class="company-logo">
+                    </div>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="service-cta">
+                    <a href="index.html#contact" class="btn">GET A FREE QUOTE TODAY</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+            this.innerHTML = nav.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.style.padding = '10px 0';
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.padding = '15px 0';
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
+            }
+        });
+
+        // Video autoplay
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.getElementById('serviceVideo');
+            if(video) {
+                video.play().catch(e => console.log("Autoplay prevented:", e));
+            }
+            
+            // FAQ toggle functionality
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const item = question.parentNode;
+                    item.classList.toggle('active');
+                    
+                    // Close other open FAQs
+                    faqQuestions.forEach(q => {
+                        if (q !== question && q.parentNode.classList.contains('active')) {
+                            q.parentNode.classList.remove('active');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

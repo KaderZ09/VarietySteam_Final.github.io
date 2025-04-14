@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tile & Grout Cleaning Services | Variety Steam Cleaning Johannesburg</title>
+    <meta name="description" content="Professional tile and grout cleaning in Johannesburg. Deep cleaning removes dirt, stains, and mold. Eco-friendly solutions with 100% satisfaction guarantee.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #5dade2;
+            --secondary: #eaf2f8;
+            --accent: #2980b9;
+            --dark: #34495e;
+            --light: #ffffff;
+            --gray: #f5f5f5;
+        }
+       
+        /* General styles */
+        body {
+            padding-top: 90px;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* Fixed Header Styles */
+        header {
+            background-color: rgba(255, 255, 255, 0.98);
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .container.header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+        }
+        
+        .logo-img {
+            height: 60px;
+            width: auto;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .logo-text span {
+            color: var(--accent);
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--dark);
+        }
+        
+        /* Navigation Button Styles */
+        nav ul {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            position: relative;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--dark);
+            padding: 8px 0;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+        
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+
+        /* Updated Hero Section */
+        .service-hero {
+            background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), 
+                        url('https://images.unsplash.com/photo-1600585152220-90363fe7e115') center/cover;
+            padding: 150px 0 100px;
+            text-align: center;
+            color: #333;
+            position: relative;
+        }
+        
+        .service-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .service-hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #555;
+        }
+        
+        .hero-btns {
+            margin-top: 40px;
+        }
+        
+        .hero-btns .btn {
+            margin: 0 15px;
+            padding: 15px 30px;
+            display: inline-block;
+            border-radius: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .btn-primary {
+            background: var(--accent);
+            color: var(--light);
+            box-shadow: 0 5px 15px rgba(41, 128, 185, 0.3);
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(41, 128, 185, 0.4);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--accent);
+            color: var(--accent);
+        }
+        
+        .btn-outline:hover {
+            background: var(--accent);
+            color: var(--light);
+        }
+
+        /* Service Details Section */
+        .service-details {
+            padding: 80px 0;
+            background: var(--light);
+            position: relative;
+        }
+       
+        .service-details::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 300px;
+            background: url('https://images.unsplash.com/photo-1600585152220-90363fe7e115') center/cover;
+            opacity: 0.05;
+            z-index: 0;
+        }
+       
+        .service-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+       
+        .service-content h2 {
+            color: var(--accent);
+            margin-bottom: 25px;
+            font-size: 2.5rem;
+            text-align: center;
+            position: relative;
+        }
+       
+        .service-content h2:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--primary);
+            margin: 15px auto 30px;
+        }
+       
+        .service-content h3 {
+            color: var(--accent);
+            margin: 40px 0 20px;
+            font-size: 1.8rem;
+            position: relative;
+            padding-left: 20px;
+        }
+       
+        .service-content h3:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            height: 80%;
+            width: 5px;
+            background: var(--primary);
+        }
+       
+        .service-content p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .service-content ul {
+            margin-bottom: 30px;
+            padding-left: 20px;
+        }
+
+        .service-content li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .service-content li:before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+        }
+       
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 40px 0;
+        }
+       
+        .benefit-card {
+            background: var(--light);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border: 1px solid rgba(0,0,0,0.05);
+            position: relative;
+            overflow: hidden;
+        }
+       
+        .benefit-card:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--primary);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+       
+        .benefit-card:hover:after {
+            transform: scaleX(1);
+        }
+       
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+       
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+       
+        .benefit-card:hover .benefit-icon {
+            transform: rotate(15deg) scale(1.1);
+        }
+       
+        /* Service Image */
+        .service-image {
+            margin: 50px 0;
+            text-align: center;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.5s ease;
+        }
+       
+        .service-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+       
+        .service-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+       
+        /* Trusted Companies Section */
+        .trusted-companies {
+            background: var(--secondary);
+            padding: 60px 0;
+            margin: 60px 0;
+            text-align: center;
+            border-radius: 10px;
+        }
+       
+        .trusted-companies h3 {
+            color: var(--accent);
+            margin-bottom: 40px;
+            font-size: 1.8rem;
+            position: relative;
+            display: inline-block;
+        }
+       
+        .trusted-companies h3:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: var(--primary);
+        }
+       
+        .companies-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+       
+        .company-logo {
+            height: 60px;
+            width: auto;
+            opacity: 0.7;
+            transition: all 0.3s;
+            filter: grayscale(100%);
+        }
+       
+        .company-logo:hover {
+            opacity: 1;
+            filter: grayscale(0);
+            transform: scale(1.1);
+        }
+       
+        /* Pricing Table */
+        .pricing-table {
+            margin: 60px 0;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            min-width: 600px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        thead tr {
+            background-color: var(--accent);
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 15px 20px;
+            text-align: left;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid var(--accent);
+        }
+
+        tbody tr:hover {
+            background-color: var(--secondary);
+        }
+
+        .price {
+            font-weight: bold;
+            color: var(--accent);
+        }
+       
+        /* CTA Section */
+        .service-cta {
+            text-align: center;
+            margin: 60px 0 40px;
+        }
+       
+        .service-cta .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--light);
+            padding: 18px 45px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(41, 128, 185, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+       
+        .service-cta .btn:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 5px;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.5);
+            opacity: 0;
+            border-radius: 100%;
+            transform: scale(1, 1) translate(-50%);
+            transform-origin: 50% 50%;
+        }
+       
+        .service-cta .btn:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(41, 128, 185, 0.4);
+        }
+       
+        .service-cta .btn:hover:after {
+            animation: ripple 1s ease-out;
+        }
+       
+        @keyframes ripple {
+            0% {
+                transform: scale(0, 0);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(20, 20);
+                opacity: 0;
+            }
+        }
+
+        /* Testimonials */
+        .testimonials {
+            margin: 60px 0;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            position: relative;
+        }
+
+        .testimonial-card:before {
+            content: '\201C';
+            font-family: Georgia, serif;
+            font-size: 60px;
+            color: var(--secondary);
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            line-height: 1;
+        }
+
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+
+        .author-info h4 {
+            margin: 0;
+            color: var(--dark);
+        }
+
+        .author-info p {
+            margin: 5px 0 0;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        .rating {
+            color: #FFD700;
+            margin-top: 5px;
+        }
+       
+        /* FAQ Section */
+        .faq-section {
+            margin: 60px 0;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            background: var(--secondary);
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 20px;
+            max-height: 500px;
+        }
+
+        .faq-toggle {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+       
+        /* Responsive */
+        @media (max-width: 900px) {
+            .benefits-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+       
+        @media (max-width: 768px) {
+            body {
+                padding-top: 70px;
+            }
+            
+            .logo-img {
+                height: 50px;
+            }
+            
+            .logo-text {
+                font-size: 20px;
+            }
+            
+            .service-hero {
+                padding: 120px 0 80px;
+            }
+           
+            .service-hero h1 {
+                font-size: 2.5rem;
+            }
+           
+            .companies-grid {
+                gap: 30px;
+            }
+           
+            .company-logo {
+                height: 40px;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: #fff;
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            }
+
+            nav.active {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+       
+        @media (max-width: 480px) {
+            .service-hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-btns .btn {
+                display: block;
+                margin: 15px auto;
+                max-width: 250px;
+            }
+           
+            .companies-grid {
+                gap: 20px;
+            }
+           
+            .company-logo {
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Fixed Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-container">
+                <!-- Replace with your actual logo -->
+                
+                <div class="logo-text">VARIETY <span>STEAM CLEANING</span></div>
+            </a>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Updated Service Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <h1>Professional Tile & Grout Cleaning</h1>
+            <p>Restore the original beauty of your tiles and grout with our deep cleaning technology that removes dirt, stains, and mold</p>
+            <div class="hero-btns">
+                <a href="index.html#contact" class="btn btn-primary">GET A FREE QUOTE</a>
+                <a href="tel:+27123456789" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details Section -->
+    <section class="service-details">
+        <div class="service-container">
+            <div class="service-content">
+                <h2>Expert Tile & Grout Cleaning Services</h2>
+               
+                <p>At Variety Steam Cleaning, we bring years of expertise to every tile and grout cleaning job in Johannesburg. Our certified technicians use state-of-the-art steam cleaning and scrubbing equipment that penetrates deep into grout lines, removing embedded dirt, stubborn stains, and mold that regular mopping can't reach.</p>
+                
+                <div class="service-image">
+                    <video width="640" height="360" controls>
+                        <source src="Data\Tile\TileVid2.mp4" type="video/mp4">
+                         Your browser does not support the video tag.
+                    </video>
+                </div>
+               
+                <h3>Our Tile & Grout Cleaning Process</h3>
+               
+                <p>We follow a meticulous 6-step process to ensure your tiles and grout receive the deepest clean possible:</p>
+                
+                <ul>
+                    <li><strong>Inspection:</strong> We assess your tile condition and identify problem areas</li>
+                    <li><strong>Pre-treatment:</strong> Specialized solutions loosen embedded dirt and stains</li>
+                    <li><strong>Deep scrubbing:</strong> High-powered brushes clean grout lines thoroughly</li>
+                    <li><strong>Steam cleaning:</strong> High-temperature steam sanitizes and removes residues</li>
+                    <li><strong>Grout sealing (optional):</strong> Protective sealant prevents future staining</li>
+                    <li><strong>Final rinse & drying:</strong> Leaves surfaces clean and ready for use</li>
+                </ul>
+               
+                <h3>Why Our Tile Cleaning Stands Out</h3>
+               
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4>Eco-Friendly Cleaning</h4>
+                        <p>We use environmentally safe, biodegradable solutions that are tough on dirt but gentle on your family, pets, and the planet.</p>
+                    </div>
+                   
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Mold Prevention</h4>
+                        <p>Our high-temperature steam cleaning eliminates mold spores and prevents future mold growth in grout lines.</p>
+                    </div>
+                   
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-broom"></i>
+                        </div>
+                        <h4>Restores Original Color</h4>
+                        <p>Our deep cleaning removes years of built-up grime, restoring your grout to its original color.</p>
+                    </div>
+                </div>
+
+                <!-- Testimonials -->
+                <div class="testimonials">
+                    <h3>What Our Clients Say</h3>
+                    <div class="testimonial-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"The difference in my bathroom tiles was incredible! Grout that was almost yellow from the stains, it's now white again! Professional and efficient service."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Elvina Charissa." class="author-img">
+                                <div class="author-info">
+                                    <h4>Elvina Charissa.</h4>
+                                    <p>Fourways</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"Our kitchen floor tiles look brand new. The team was careful with our cabinets and appliances, and left everything spotless."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/men/7.jpg" alt="Taufeek H." class="author-img">
+                                <div class="author-info">
+                                    <h4>Taufeek H.</h4>
+                                    <p>Florida</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"Quick response and excellent results. They removed years of built-up dirt from our entryway tiles that regular cleaners couldn't touch."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Thandi N." class="author-img">
+                                <div class="author-info">
+                                    <h4>Nicole.</h4>
+                                    <p>Begbron</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h3>Frequently Asked Questions</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How often should I have my tiles professionally cleaned?</span>
+                            <i class="fas fa-chevron-down faq-toggle"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We recommend professional cleaning every month for most households. High traffic areas or homes with children/pets may need cleaning every 1-2 weeks.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Can you remove mold from grout?</span>
+                            <i class="fas fa-chevron-down faq-toggle"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, our high-temperature steam cleaning kills mold spores and removes visible mold. We also offer mold-resistant sealants to help prevent future growth.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How long does it take for tiles to dry after cleaning?</span>
+                            <i class="fas fa-chevron-down faq-toggle"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Tiles typically dry within 30 min-1 hour/s, while grout may take 4-6 hours depending on humidity and ventilation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Can you clean all types of tile?</span>
+                            <i class="fas fa-chevron-down faq-toggle"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We clean all common tile types including ceramic, porcelain, quarry, and natural stone. Our technicians adjust methods based on your specific tile material.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trusted Companies Section -->
+                <div class="trusted-companies">
+                    <h3>Trusted By Leading Companies</h3>
+                    <div class="companies-grid">
+                        <img src="Data\Logos\cropped-header_logo.png" alt="Company 1" class="company-logo">
+                        <img src="Data\Logos\Pokecut_1744467295907.png" alt="Company 2" class="company-logo">
+                        <img src="Data\Logos\Pokecut_1744467354861.png" alt="Company 3" class="company-logo">
+                        <img src="Data\Logos\Pokecut_1744467384548.png" alt="Company 4" class="company-logo">
+                        <img src="Data\Logos\Pokecut_1744467413726.png" alt="Company 5" class="company-logo">
+                    </div>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="service-cta">
+                    <a href="index.html#contact" class="btn">GET A FREE QUOTE TODAY</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+            this.innerHTML = nav.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.style.padding = '10px 0';
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.padding = '15px 0';
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
+            }
+        });
+
+        // Video autoplay
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.getElementById('serviceVideo');
+            if(video) {
+                video.play().catch(e => console.log("Autoplay prevented:", e));
+            }
+            
+            // FAQ toggle functionality
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const item = question.parentNode;
+                    item.classList.toggle('active');
+                    
+                    // Close other open FAQs
+                    faqQuestions.forEach(q => {
+                        if (q !== question && q.parentNode.classList.contains('active')) {
+                            q.parentNode.classList.remove('active');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
