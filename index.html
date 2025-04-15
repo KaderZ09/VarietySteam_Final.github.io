@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variety Steam Cleaning | Top Home & Commercial Cleaning in Johannesburg</title>
+<meta name="description" content="Professional eco-friendly steam cleaning services in Johannesburg. Carpet, upholstery, tile & mattress cleaning. 100% satisfaction guarantee. Call +27 11 123 4567">
+<meta name="keywords" content="steam cleaning Johannesburg, carpet cleaning, upholstery cleaning, tile cleaning, professional cleaners, eco-friendly cleaning">
+<meta name="author" content="Variety Steam Cleaning">
+<meta name="geo.region" content="ZA-GP">
+<meta name="geo.placename" content="Johannesburg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Global Styles */
+        :root {
+            --primary: #5dade2;  /* Light blue */
+            --secondary: #eaf2f8;  /* Very light blue */
+            --accent: #2980b9;  /* Darker blue */
+            --dark: #34495e;  /* Dark blue-gray */
+            --light: #ffffff;
+            --gray: #f5f5f5;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--light);
+            padding: 12px 25px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        section {
+            padding: 80px 0;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--accent);
+            font-size: 2.5rem;
+            position: relative;
+        }
+        h2:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--primary);
+            margin: 15px auto 0;
+        }
+
+        /* Header */
+        header {
+            background: var(--light);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        header.scrolled {
+            padding: 10px 0;
+            background: rgba(255,255,255,0.95);
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .logo span {
+            color: var(--primary);
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 40px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            transition: color 0.3s;
+            position: relative;
+        }
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            bottom: -5px;
+            left: 0;
+            transition: width 0.3s;
+        }
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+        .mobile-menu {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--dark);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(234, 242, 248, 0.9), rgba(234, 242, 248, 0.9)), 
+                        url('https://images.unsplash.com/photo-1600585152220-90363fe7e115') center/cover;
+            padding: 180px 0 100px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hero-btns {
+            margin-top: 40px;
+        }
+        .hero-btns .btn {
+            margin: 0 15px;
+            padding: 15px 30px;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--accent);
+            color: var(--accent);
+        }
+        .btn-outline:hover {
+            background: var(--accent);
+            color: var(--light);
+        }
+
+        /* Services Section */
+        .services {
+            background: var(--gray);
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        .service-card {
+            background: var(--light);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+        .service-img {
+            height: 250px;
+            overflow: hidden;
+        }
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .service-content {
+            padding: 30px;
+        }
+        .service-content h3 {
+            margin-bottom: 15px;
+            color: var(--accent);
+            font-size: 1.5rem;
+        }
+        .service-content p {
+            margin-bottom: 20px;
+        }
+        .service-price {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* About Section */
+        .about {
+            background: var(--light);
+        }
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .about-img {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .about-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .about-content h2 {
+            text-align: left;
+        }
+        .about-content h2:after {
+            margin: 15px 0;
+        }
+        .about-content p {
+            margin-bottom: 20px;
+        }
+        .about-features {
+            margin-top: 30px;
+        }
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .feature-icon {
+            color: var(--primary);
+            font-size: 24px;
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--secondary);
+        }
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        .contact-info h3 {
+            color: var(--accent);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        .contact-info p {
+            margin-bottom: 30px;
+        }
+        .contact-details {
+            margin-bottom: 30px;
+        }
+        .contact-details div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .contact-details i {
+            color: var(--primary);
+            font-size: 20px;
+            margin-right: 15px;
+            width: 20px;
+        }
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            color: var(--light);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+            transition: all 0.3s;
+        }
+        .social-icons a:hover {
+            background: var(--accent);
+            transform: translateY(-5px);
+        }
+        .contact-form {
+            background: var(--light);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+            transition: all 0.3s;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(93, 173, 226, 0.2);
+        }
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        .form-honeypot {
+            position: absolute;
+            left: -5000px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: var(--light);
+            padding: 60px 0 20px;
+        }
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-col h3 {
+            color: var(--primary);
+            margin-bottom: 25px;
+            font-size: 1.3rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .footer-col h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--primary);
+        }
+        .footer-col p {
+            margin-bottom: 20px;
+        }
+        .footer-links li {
+            margin-bottom: 15px;
+            list-style: none;
+        }
+        .footer-links a {
+            color: var(--light);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .footer-links a:hover {
+            color: var(--primary);
+            padding-left: 5px;
+        }
+        .footer-contact li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            list-style: none;
+        }
+        .footer-contact i {
+            color: var(--primary);
+            margin-right: 15px;
+            width: 20px;
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .about-container,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            .about-content h2 {
+                text-align: center;
+            }
+            .about-content h2:after {
+                margin: 15px auto;
+            }
+        }
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 15px;
+            }
+            nav {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: var(--light);
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            }
+            nav.active {
+                display: block;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 15px 0;
+            }
+            .mobile-menu {
+                display: block;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero-btns .btn {
+                display: block;
+                margin: 15px auto;
+                max-width: 250px;
+            }
+        }
+        @media (max-width: 576px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            section {
+                padding: 60px 0;
+            }
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">VARIETY <span>STEAM CLEANING</span></a>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Professional Cleaning Services</h1>
+            <p>Eco-friendly, deep-cleaning solutions for your home or business. Our advanced steam technology eliminates dirt, bacteria, and allergens without harsh chemicals.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn">Get a Free Quote</a>
+                <a href="tel:+27111234567" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a>
+            </div>
+        </div>
+    </section>
+
+<!-- Services Section -->
+<section class="services" id="services">
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <!-- Service 1 - Replace image source -->
+            <div class="service-card">
+                <div class="service-img">
+                    <!-- REPLACE WITH YOUR CARPET CLEANING PHOTO -->
+                    <a href="Carpet Cleaning.html"><img src="Data\Carpet\Carpet4.jpg" alt="Professional carpet steam cleaning service"></a>
+                </div>
+                <div class="service-content">
+                    <h3>Carpet Cleaning</h3>
+                    <p>Deep cleaning removes embedded dirt, stains, and allergens while eliminating 99.9% of bacteria.</p>
+                </div>
+            </div>
+
+            <!-- Service 2 - Replace image source -->
+            <div class="service-card">
+                <div class="service-img">
+                    <!-- REPLACE WITH YOUR UPHOLSTERY CLEANING PHOTO -->
+                    <a href="Upholstery Cleaning.html"><img src="Data\Upholstery\Apholstery1 (1).jpg" alt="Upholstery deep cleaning service for sofas and chairs"></a>
+                </div>
+                <div class="service-content">
+                    <h3>Upholstery Cleaning</h3>
+                    <p>Gentle yet effective cleaning for sofas, chairs, and fabric furnishings. Safe for delicate materials.</p>
+                </div>
+            </div>
+
+            <!-- Service 3 - Replace image source -->
+            <div class="service-card">
+                <div class="service-img">
+                    <!-- REPLACE WITH YOUR TILE CLEANING PHOTO -->
+                    <a href="Tile & Grout Cleaning.html"><img src="Data\Tile\Tile2.jpg" alt="Tile and grout deep cleaning service"></a>
+                </div>
+                <div class="service-content">
+                    <h3>Tile & Grout Cleaning</h3>
+                    <p>Restore tile brightness and remove stubborn grout stains with our high-pressure steam system.</p>
+                </div>
+            </div>
+
+            <!-- Service 4 - Replace image source -->
+            <div class="service-card">
+                <div class="service-img">
+                    <!-- REPLACE WITH YOUR COMMERCIAL CLEANING PHOTO -->
+                    <a href="Commercial Cleaning.html"><img src="Data\Commercial\Commercial1.jpg" alt="Commercial space cleaning service"></a>
+                </div>
+                <div class="service-content">
+                    <h3>Commercial Cleaning</h3>
+                    <p>Complete cleaning solutions for offices, retail spaces, and commercial properties.</p>
+                </div>
+            </div>
+
+            <!-- Service 5 - Replace image source -->
+            <div class="service-card">
+                <div class="service-img">
+                    <!-- REPLACE WITH YOUR HOME CLEANING PHOTO -->
+                    <a href="Home Cleaning.html"><img src="Data\Home\Home4.jpg" alt="Home deep cleaning service"></a>
+                </div>
+                <div class="service-content">
+                    <h3>Home Cleaning</h3>
+                    <p>Professional cleaning for chairs, curtains, and any home interior items.</p>
+                </div>
+            </div>
+
+            <!-- Service 6 - Replace image source -->
+            <div class="service-card">
+                <div class="service-img">
+                    <!-- REPLACE WITH YOUR MATTRESS CLEANING PHOTO -->
+                    <a href="Mattress Cleaning.html"><img src="Data\Mattress\Mattress 3.jpg" alt="Mattress deep cleaning service"></a>
+                </div>
+                <div class="service-content">
+                    <h3>Mattress Cleaning</h3>
+                    <p>Sanitize and refresh mattresses, eliminating dust mites and allergens for better sleep health.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-img">
+                    <img src="Data\WhatsApp Image 2025-04-14 at 13.06.09_cbf4d204.jpg" alt="Variety Steam Cleaning team at work">
+                </div>
+                <div class="about-content">
+                    <h2>About Variety Steam Cleaning</h2>
+                    <p>Founded in 2008, Variety Steam Cleaning has become a trusted name in professional steam cleaning services across South Africa. We're committed to providing eco-friendly cleaning solutions that are safe for your family and pets.</p>
+                    <p>Our team of skilled workers who use state-of-the-art steam cleaning equipment and eco-friendly chemicals that kill bacteria, viruses, and dust mites without using harsh chemicals.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4>Eco-Friendly</h4>
+                                <p>Chemical-free cleaning that's safe for children and pets</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4>Skilled Workers</h4>
+                                <p>Trained professionals with years of experience</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4>Satisfaction Guaranteed</h4>
+                                <p>We stand behind our work with a 100% satisfaction guarantee</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Ready to experience the Variety Steam Cleaning difference? Contact us today to schedule your service or request a free quote.</p>
+                    <div class="contact-details">
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>116 Kwagga St, Langlaagte, Johannesburg, South Africa</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-phone"></i>
+                            <span>+27 82 851 1226</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-envelope"></i>
+                            <span>Alcare1@gmail.com</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 8:00 AM - 6:00 PM<br>Sat-Sun: 9:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/VarietySteamCleaning" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/VarietySteamCleaning" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/VarietySteam" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/+27828511226" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="quoteForm" action="https://formsubmit.co/alcare1@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New Steam Cleaning Quote">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_honey" class="form-honeypot" tabindex="-1">
+                        
+                        <!-- Name Field -->
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <!-- Email Field -->
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                
+                        <!-- Contact Number Field -->
+                        <div class="form-group">
+                            <label for="contact_number">Contact Number (+27)</label>
+                            <input type="tel" id="contact_number" name="contact_number" 
+                                   pattern="+27[0-9]{9}" 
+                                   placeholder="+27 11 123 4567" required>
+                        </div>
+                        
+                        <!-- Location Field -->
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" name="location" required>
+                        </div>
+                
+                        <!-- Service Field -->
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="Carpet Cleaning">Carpet Steam Cleaning</option>
+                                <option value="Upholstery">Upholstery Cleaning</option>
+                                <option value="Tile & Grout">Tile & Grout Cleaning</option>
+                                <option value="Mattress">Mattress Cleaning</option>
+                                <option value="Commercial">Commercial Cleaning</option>
+                                <option value="Home">Home Cleaning</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Description Field -->
+                        <div class="form-group">
+                            <label for="cleaning_details">Service Details</label>
+                            <textarea
+                                id="cleaning_details"
+                                name="cleaning_details"
+                                class="form-control"
+                                placeholder="Please provide details about the cleaning service you need, including any specific areas or items to be cleaned."
+                                rows="5"
+                                required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Request Quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>About Us</h3>
+                    <p>Variety Steam Cleaning is a leading provider of eco-friendly steam cleaning services in South Africa, committed to delivering exceptional results with environmentally responsible methods.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="Carpet Cleaning.html">Carpet Cleaning</a></li>
+                        <li><a href="Upholstery Cleaning.html">Upholstery Cleaning</a></li>
+                        <li><a href="Tile & Grout Cleaning.html">Tile & Grout</a></li>
+                        <li><a href="Mattress Cleaning.html">Mattress Cleaning</a></li>
+                        <li><a href="Commercial Cleaning.html">Commercial Cleaning</a></li>
+                        <li><a href="Home Cleaning.html">Home Cleaning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>116 Kwagga St, Langlaagte, Johannesburg, South Africa</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+27 82 851 1226</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>Alcare1@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> Variety Steam Cleaning. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('nav') && !e.target.closest('.mobile-menu')) {
+                document.querySelector('nav').classList.remove('active');
+            }
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('nav').classList.remove('active');
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form Submission Feedback
+        document.getElementById('quoteForm').addEventListener('submit', function(e) {
+            // FormSubmit.co will handle the actual submission
+            alert('Thank you for your request! We will contact you shortly regarding your quote.');
+            this.reset();
+        });
+
+        // Update copyright year automatically
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
